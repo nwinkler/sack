@@ -137,7 +137,7 @@ remove_escaped_chars() {
     # than OS X
 
     # Linux / Cygwin
-    if [[ $sack__OS == "Linux" ]] || [[ $sack__OS == "$CYGWIN_NT"* ]]; then
+    if [[ $sack__OS == "Linux" ]] || [[ $sack__OS == "CYGWIN_NT"* ]]; then
         sed -r "s/\[([0-9]{1,2}(;[0-9]{1,2})?)?[m|K]//g"
     # OS X
     elif [[ $sack__OS == "Darwin" ]]; then
